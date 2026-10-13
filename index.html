@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kaniska | Influencer, Brand and Social Media Marketing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#111827;--mute:#566074;--line:#d9dde5;--acc:#0e5a60;--accbg:#e3f1f1;--onacc:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1116;--card:#171b22;--ink:#eef1f6;--mute:#9aa4b5;--line:#2a313c;--acc:#5fc4c9;--accbg:#173236;--onacc:#0e1116}}
+:root[data-theme="dark"]{--bg:#0e1116;--card:#171b22;--ink:#eef1f6;--mute:#9aa4b5;--line:#2a313c;--acc:#5fc4c9;--accbg:#173236;--onacc:#0e1116}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;margin:0;line-height:1.1;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-weight:600}
+nav div{display:flex;gap:22px;font-size:15px;font-weight:500}
+nav a{text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+.hero{padding:44px 0 36px}
+.hero h1{font-size:clamp(44px,8vw,86px);font-weight:700;letter-spacing:-.035em}
+.sub{font-size:clamp(20px,2.6vw,26px);max-width:28em;margin:18px 0 0;color:var(--mute);font-family:"Bricolage Grotesque",sans-serif;font-weight:500;line-height:1.3}
+.pitch{max-width:36em;margin:18px 0 0;min-height:5.2em}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:12px;background:var(--card);padding:4px;margin-top:26px;flex-wrap:wrap}
+.seg button{all:unset;cursor:pointer;padding:9px 18px;border-radius:9px;font-weight:600;font-size:15px;color:var(--mute)}
+.seg button[aria-pressed="true"]{background:var(--acc);color:var(--onacc)}
+.seg button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.seglabel{display:block;margin-top:30px;font-size:15px;color:var(--mute)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border:1px solid var(--line);border-radius:16px;background:var(--card);margin-top:34px}
+.facts div{padding:18px 20px;border-left:1px solid var(--line)}
+.facts div:first-child{border-left:0}
+.facts b{display:block;font:700 30px "Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
+.facts span{font-size:14px;color:var(--mute)}
+section{padding:54px 0 10px}
+h2{font-size:clamp(28px,4vw,40px);font-weight:700;margin-bottom:8px}
+.lead{color:var(--mute);max-width:38em;margin:0 0 26px}
+.tl{display:grid;gap:18px}
+.job{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px}
+.jh{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.job h3{font-size:22px}
+.co{color:var(--mute);font-weight:500}
+.when{font-size:14px;color:var(--mute);font-weight:600}
+.job ul{margin:12px 0 0;padding:0;list-style:none}
+.job li{padding:5px 0 5px 16px;border-left:3px solid transparent;margin:2px 0;transition:.2s}
+.job li.hot,.item.hot,.card.hot{border-left-color:var(--acc);background:var(--accbg)}
+.job li.hot{font-weight:500}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;border-left:3px solid var(--line)}
+.card h3{font-size:21px;margin-bottom:6px}
+.card p{margin:0;color:var(--mute)}
+.card.hot p{color:var(--ink)}
+.brands{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.brands span{padding:9px 16px;border:1px solid var(--line);border-radius:10px;background:var(--card);font-weight:600;font-size:15px}
+.brands i{font-style:normal;color:var(--mute);font-size:12px;font-weight:500;margin-left:6px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:7px 14px;border:1px solid var(--line);border-radius:999px;font-size:15px;background:var(--card);font-weight:500}
+.chip.hot{background:var(--acc);border-color:var(--acc);color:var(--onacc)}
+.contact{margin:56px 0 40px;padding:clamp(26px,5vw,46px);border:1px solid var(--line);border-radius:20px;background:var(--card)}
+.contact h2{font-size:clamp(30px,5vw,48px)}
+.contact p{max-width:34em;color:var(--mute)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;background:var(--acc);color:var(--onacc);border:1px solid var(--acc)}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--line)}
+footer{padding:0 0 40px;color:var(--mute);font-size:14px}
+@media (max-width:640px){nav div{gap:14px}.facts div{border-left:0;border-top:1px solid var(--line)}.facts div:first-child{border-top:0}.pitch{min-height:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><span>Kaniska</span><div><a href="#experience">Experience</a><a href="#campaigns">Campaigns</a><a href="#onscreen">On camera</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+  <h1>Kaniska</h1>
+  <p class="sub">Marketer who has worked both sides of a campaign: planning it and appearing in it.</p>
+  <span class="seglabel" id="sl">View my profile for the role you are hiring for:</span>
+  <div class="seg" role="group" aria-labelledby="sl">
+    <button data-role="influencer" aria-pressed="true">Influencer marketing</button>
+    <button data-role="brand" aria-pressed="false">Brand marketing</button>
+    <button data-role="social" aria-pressed="false">Social media marketing</button>
+  </div>
+  <p class="pitch" id="pitch" aria-live="polite"></p>
+  <div class="cta"><a class="btn" href="mailto:kaniskasaravannan864@gmail.com">Email me</a><a class="btn alt" href="tel:+918760350005">+91 8760350005</a></div>
+  <div class="facts">
+    <div><b>12+</b><span>brands worked with</span></div>
+    <div><b>3</b><span>marketing roles since May 2025</span></div>
+    <div><b>16K+</b><span>own Instagram audience</span></div>
+    <div><b>Bengaluru</b><span>B.Tech IT, 2022 to 2026</span></div>
+  </div>
+</header>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <p class="lead">Three roles in about a year, each one closer to running campaigns end to end.</p>
+  <div class="tl">
+    <article class="job">
+      <div class="jh"><h3>Influencer Marketing Associate <span class="co">at CodeYoung (edtech)</span></h3><span class="when">April 2026 to present</span></div>
+      <ul>
+        <li data-for="influencer">Scout creators, reach out and negotiate rates.</li>
+        <li data-for="influencer brand">Calculate CPV (cost per view) to decide which creators and prices make sense.</li>
+        <li data-for="influencer social">Take creators live and help with their content creation.</li>
+        <li data-for="brand influencer">Track the leads each creator generates once they are live and analyse the insights.</li>
+        <li data-for="brand">Build Excel sheets for next month's budget, targets and achievements.</li>
+        <li data-for="social">Present in company marketing videos and promotional content.</li>
+      </ul>
+    </article>
+    <article class="job">
+      <div class="jh"><h3>Influencer Marketing Intern <span class="co">at Confluencr (agency)</span></h3><span class="when">December 2025 to March 2026, 3 months</span></div>
+      <ul>
+        <li data-for="influencer">Handled creator scouting, outreach and negotiation.</li>
+        <li data-for="influencer social">Ran influencer campaigns from start to finish.</li>
+        <li data-for="brand influencer">Managed the Dabur Almond Valentine's campaign, including client meetings.</li>
+      </ul>
+    </article>
+    <article class="job">
+      <div class="jh"><h3>Social Media Marketing Intern <span class="co">at Wisework</span></h3><span class="when">May 2025 to November 2025, 6 months</span></div>
+      <ul>
+        <li data-for="social">Created posts and reels.</li>
+        <li data-for="social brand">Planned content, scheduled it and posted it.</li>
+        <li data-for="social">Helped maintain the company's content calendar.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="campaigns">
+  <h2>Campaign work</h2>
+  <p class="lead">The projects I can talk through in an interview.</p>
+  <div class="grid2">
+    <div class="card" data-for="brand influencer"><h3>Dabur Almond: Valentine's campaign</h3><p>Managed the campaign at Confluencr and sat in client meetings. Ask me about the brief, the creators and the results.</p></div>
+    <div class="card" data-for="influencer brand"><h3>Creator campaigns at CodeYoung</h3><p>Scouting to go-live, then lead tracking per creator and a monthly Excel review of budget, targets and achievements.</p></div>
+    <div class="card" data-for="social"><h3>Content at Wisework</h3><p>Six months of posts and reels, from idea to schedule to publish.</p></div>
+  </div>
+</section>
+
+<section id="onscreen">
+  <h2>On camera and as a creator</h2>
+  <p class="lead">I am a small influencer, very comfortable in front of a camera. I appear as a presenter in ads, including freelance work for other brands, and in CodeYoung's own marketing videos. That helps me brief creators better, because I know what a brief feels like on the other side.</p>
+  <div class="brands" aria-label="Brands I have worked with">
+    <span>Deyga Organics</span><span>Behindwoods</span><span>Little Box</span><span>redBus</span><span>Wonderla</span><span>Flipkart<i>event</i></span><span>Namyaa</span><span>Flo Mattress</span><span>Kixa</span><span>Zouk</span><span>Popeyes</span><span>MTR Foods<i>event</i></span><span>and more</span>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <p class="lead">Highlighted skills are strongest for the role selected above.</p>
+  <div class="chips">
+    <span class="chip" data-for="influencer">Creator scouting</span><span class="chip" data-for="influencer">Outreach</span><span class="chip" data-for="influencer brand">Rate negotiation</span><span class="chip" data-for="influencer brand">CPV calculation</span>
+    <span class="chip" data-for="influencer brand">Campaign management</span><span class="chip" data-for="brand influencer">Lead tracking and insights</span><span class="chip" data-for="brand">Budgeting and targets in Excel</span><span class="chip" data-for="brand">Client meetings</span>
+    <span class="chip" data-for="social">Content creation</span><span class="chip" data-for="social">Reels and posts</span><span class="chip" data-for="social">Content scheduling</span><span class="chip" data-for="social influencer">Scriptwriting</span><span class="chip" data-for="social">Video editing</span><span class="chip" data-for="social brand">On-camera presenting</span>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Let's talk.</h2>
+  <p>I am open to influencer marketing, brand marketing and social media marketing roles. Email is the fastest way to reach me.</p>
+  <div class="cta"><a class="btn" href="mailto:kaniskasaravannan864@gmail.com">kaniskasaravannan864@gmail.com</a><a class="btn alt" href="tel:+918760350005">+91 8760350005</a><a class="btn alt" href="https://www.instagram.com/kaniskasaran" target="_blank" rel="noopener">Instagram @kaniskasaran</a></div>
+</section>
+<footer>Kaniska, Bengaluru, India</footer>
+</div>
+
+<script>
+var pitches={
+influencer:"I find creators, negotiate with them, get them live and track what they deliver. At CodeYoung I work from CPV to leads, so every creator can be judged by results.",
+brand:"I connect creator content to business outcomes: client meetings, lead tracking, and monthly budgets, targets and achievements built from real performance.",
+social:"I create, schedule and post content for brands, and I present on camera myself. I have done this as an intern, as an associate and as a creator."
+};
+var role="influencer";
+function paint(){
+  document.getElementById("pitch").textContent=pitches[role];
+  document.querySelectorAll("[data-for]").forEach(function(el){
+    el.classList.toggle("hot",el.getAttribute("data-for").split(" ").indexOf(role)>-1);
+  });
+  document.querySelectorAll(".seg button").forEach(function(b){
+    b.setAttribute("aria-pressed",b.getAttribute("data-role")===role?"true":"false");
+  });
+}
+document.querySelectorAll(".seg button").forEach(function(b){
+  b.addEventListener("click",function(){role=b.getAttribute("data-role");paint();});
+});
+paint();
+</script>
+</body>
+</html>
